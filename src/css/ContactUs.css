@@ -1,0 +1,55 @@
+.contact-us {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-us h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .contact-us p {
+    text-align: center;
+    color: #ec2f2f;
+  }
+  
+  .contact-details, .social-media {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-details h3, .social-media h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-details p, .social-media ul {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .social-media ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-media li {
+    margin: 0 10px;
+  }
+  
+  .social-media a {
+    text-decoration: none;
+    color: #0073e6;
+  }
+  
+  .social-media a:hover {
+    text-decoration: underline;
+  }
+  

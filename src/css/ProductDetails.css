@@ -1,0 +1,75 @@
+/* Product details container */
+.product-details {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 500px; /* Limit the width for better readability */
+    margin: 20px auto; /* Center the container horizontally */
+}
+
+/* Product image styling */
+.product-image {
+    width: 100%; /* Responsive width */
+    max-width: 400px; /* Limit maximum width */
+    height: 400px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #ddd; /* Subtle border for definition */
+    margin-bottom: 20px; /* Space below image */
+}
+
+/* Title styling */
+.product-details h1 {
+    font-size: 2rem; /* Adjust size for better prominence */
+    color: #333; /* Dark text for readability */
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* Clean, readable font */
+    text-decoration: none; /* Ensure no underline */
+}
+
+/* Paragraph styling */
+.product-details p {
+    font-size: 1rem; /* Base font size */
+    color: #555; /* Slightly lighter text color */
+    line-height: 1.6; /* Improved readability */
+    margin: 10px 0;
+    text-decoration: none; /* Ensure no underline */
+}
+
+/* Description styling */
+.details {
+    text-align: left; /* Align text to the left */
+    max-width: 600px; /* Limit width for readability */
+    margin: 0 auto 20px auto; /* Center and add space below */
+    padding: 10px; /* Add padding inside the block */
+    background-color: #fff; /* White background for contrast */
+    border: 1px solid #ddd; /* Subtle border for separation */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Price and rating styling */
+.product-details .price {
+    font-size: 1.2rem; /* Slightly larger font size */
+    color: #e53935; /* Highlight color for price */
+    font-weight: bold; /* Make price stand out */
+    text-decoration: none; /* Ensure no underline */
+}
+
+.product-details .rating {
+    font-size: 1rem; /* Base font size */
+    color: #888; /* Lighter text color */
+    text-decoration: none; /* Ensure no underline */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .product-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .product-details {
+        padding: 10px;
+    }
+}
