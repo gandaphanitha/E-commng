@@ -1,7 +1,3 @@
-
-
-
-
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { PRODUCT_API } from "../constant/apiConstant";
@@ -25,18 +21,18 @@ const ProductCards = () => {
     try {
       const response = await axios.get(PRODUCT_API);
       setProducts(response.data);
-      filterProducts(response.data);
+      filterProducts(response.data, category); // Pass category to filter function
     } catch (error) {
       console.error(`Error fetching product list`, error);
     }
   };
 
-  const filterProducts = (products) => {
+  const filterProducts = (products, category) => {
     if (category && category !== "all") {
       const filtered = products.filter(product => product.category.toLowerCase() === category.toLowerCase());
       setFilteredProducts(filtered);
     } else {
-      setFilteredProducts(products);
+      setFilteredProducts(products); // Show all products if no category or category is "all"
     }
   };
 
@@ -125,4 +121,3 @@ const ProductCards = () => {
 };
 
 export default ProductCards;
-
